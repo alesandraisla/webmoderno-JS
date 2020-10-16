@@ -21,20 +21,23 @@ console.log(media.toFixed(2));   //altera a quantidade de casas decimais
 console.log(media.toString(2));  // Converte em binário
 
 console.log("===================================================");
+//Armazenar notasAtividades em um array 
+//Fazer um for no array e somar as notas da atividades
+
 
 const pesoExercicios = 4.0;
 const pesoProva = 2.0;
-const ex1 = 9.0
-const ex2 = 9.0
-const ex3 = 8.0
-const ex4 = 8.0
+let notasAtividades = [ 9.0, 9.0, 9.0, 9.0];
 const prova = 9.0
+let somaEx =  0;
 
-
-const somaEx = ex1 + ex2 + ex3 + ex4
+for (let i = 0; i < notasAtividades.length; i++) {
+    somaEx += notasAtividades[i];
+}
 
 const mediaEx = somaEx / pesoExercicios;
 console.log("Média das quatro atividades:", mediaEx); //9. média das primeiras atividades
 
 const mediaFinal = (mediaEx + prova) / pesoProva
 console.log("Média final (atividade+prova):", mediaFinal);
+
