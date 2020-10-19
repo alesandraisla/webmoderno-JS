@@ -21,7 +21,7 @@ console.log(media.toFixed(2));   //altera a quantidade de casas decimais
 console.log(media.toString(2));  // Converte em binário
 
 console.log('3' + 2);  //concatenar os dois números
-console.log('2' - 3);
+console.log('2' - 3); //subtrair normalmente 
 
 console.log("===================================================");
 //Armazenar notasAtividades em um array 

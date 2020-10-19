@@ -28,8 +28,6 @@ console.log(produto2);
 //     nome: '',
 //     nascimento: '',
 //     cpf: '',
-//     peso:'',
-//     altura: '',
 //     telefone: ,
 //     endereço: {
 //         logradouro: '',
