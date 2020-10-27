@@ -1,3 +1,5 @@
+// operador aritmético é binário, pois existem dois operandos
+
 const [a, b, c, d] = [3,5,2,15];
 
 const soma = a + b + c + d;

@@ -8,7 +8,7 @@ function compras(trabalho1, trabalho2){
     const comprarTv50 = trabalho1 && trabalho2;
     //const comprarTv32 = !!(trabalho1 ^trabalho2) 
     const comprarTv32 = trabalho1 != trabalho2;
-    const manterSaudavel = !comprarSorvete;
+    const manterSaudavel = !comprarSorvete;     //operador unário
 
     // Objeto é uma coleção chave valor , pode omitir a chave caso tenha redundância 
     return {comprarSorvete, comprarTv50, comprarTv32, manterSaudavel}

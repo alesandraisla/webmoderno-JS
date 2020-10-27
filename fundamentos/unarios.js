@@ -7,10 +7,6 @@ console.log(num1); // 2
 console.log(num1); // 1
 
 console.log(++num1 === num2--);  //verdadeiro
-console.log(num1 === num2);
-
-
-
-
+console.log(num1 === num2); // falso 
 
 

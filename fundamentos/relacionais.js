@@ -16,8 +16,8 @@ const d2 = new Date(0);
 //Endereço de memória não faz diferença, pois dará falso
 console.log('09)', d1 === d2); // falso
 console.log('10)', d1 == d2); // falso
-console.log('11)', d1.getTime() === d2.getTime());
-console.log('12)', d1.getTime() == d2.getTime());
+console.log('11)', d1.getTime() === d2.getTime()); // verdadeiro
+console.log('12)', d1.getTime() == d2.getTime()); // verdadeiro
 
 console.log('13)', undefined == null); //verdadeiro
 console.log('14)', undefined === null); // falso
