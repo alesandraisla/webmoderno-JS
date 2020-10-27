@@ -203,13 +203,77 @@
 
 //ternários
 
+// const resultadoAluno = nota => nota >= 6 ? 'Aluno aprovado ' +  nota : 'Aluno reprovado ' + nota;
+
+// console.log(resultadoAluno(8));
+// console.log(resultadoAluno(5.9));
+
 
 
 //Destructuring
 
+// Objeto
+// const cadastro = {
+//     nome: 'Yuna',
+//     idade: 20,
+//     endereco: {
+//         logradouro: 'Rua Final Fantasy',
+//         numero: 10
+//     }
+// }
 
-//Estrutura de Controle If, Else, FOR
+// // console.log(cadastro);
+// const {nome, idade} = cadastro;
+// console.log(nome, idade);
 
-//Tratando erro 
+// const {endereco: {logradouro}} = cadastro;
+// console.log(logradouro);
+
+// const{nome: n, idade: i} = cadastro;
+// console.log(n, i);
+
+//Array
+// const [n1, ,n3, ,n5] = ['Manga', 'Acerola', 'Maracujá']
+// console.log(n1, n3, n5);
+
+
+
+//Estrutura de Controle If, Else
+
+// function notaDoAluno (nota){
+//     if(nota >= 7){
+//         console.log('Aluno aprovado')
+//     } else {
+//         console.log('Aluno reprovado')
+//     }
+// }
+
+// notaDoAluno(6.8);
+// notaDoAluno(8.0);
+
+
+// //Tratando erro 
+
+// function TratarComErro (erro){
+//     throw{
+//         nome: erro.name,
+//         msg: erro.message,
+//         date: new Date
+//     }
+// }
+
+// function imprimirNaTela(obj){
+//     try{
+//         console.log(obj.name.toUpperCase())
+//     }catch (e){
+//         TratarComErro(e);
+//     }finally{
+//         console.log('Final')
+//     }
+// }
+
+
+// const obj = { nome: 'Cursos'}
+// imprimirNaTela(obj);
 
 

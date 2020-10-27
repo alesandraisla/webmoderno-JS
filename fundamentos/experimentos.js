@@ -14,8 +14,8 @@ this.d = 15;
 this.e = 20;
 
 console.log(module.exports.d);
-console.log(module.exports === this);
-console.log(module.exports);
+console.log(module.exports === this); // true
+console.log(module.exports); // exportará todos os this
 
 
 
