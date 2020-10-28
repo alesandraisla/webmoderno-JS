@@ -19,10 +19,10 @@ seForVerdadeFalo(undefined); //falso
 seForVerdadeFalo(NaN); //falso
 seForVerdadeFalo(''); //falso
 seForVerdadeFalo(0); //falso
-seForVerdadeFalo(-1);
-seForVerdadeFalo(true);
-seForVerdadeFalo(' ');
-seForVerdadeFalo('?');
-seForVerdadeFalo([]);
-seForVerdadeFalo([1,2]);
-seForVerdadeFalo({});
+seForVerdadeFalo(-1); //verdade
+seForVerdadeFalo(true); //verdade
+seForVerdadeFalo(' '); //verdade
+seForVerdadeFalo('?'); //verdade
+seForVerdadeFalo([]); //verdade
+seForVerdadeFalo([1,2]); //verdade
+seForVerdadeFalo({}); //verdade

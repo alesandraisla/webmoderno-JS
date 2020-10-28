@@ -9,4 +9,5 @@ const imprimirResultado = function(nota){
 imprimirResultado(10);
 imprimirResultado(5.2);
 imprimirResultado('Epa'); // cuidado, pois dará reprovado!!!
-imprimirResultado(8.5)
+imprimirResultado(8.5);
+
