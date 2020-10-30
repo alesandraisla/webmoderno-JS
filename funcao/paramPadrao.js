@@ -32,7 +32,7 @@ console.log(somar2(0,0,0));  //reconhece o zero
 console.log(somar2(1,2,3));
 
 
-// valor padrão do es2015
+// valor padrão do es2015 (Recurso mais novo)
 
 function somar3(a=1, b=1, c=1){
     return a + b + c;

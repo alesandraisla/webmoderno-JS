@@ -2,14 +2,10 @@
 // Higher-order function
 
 //criar de forma literal
-
-//pode receber parametro e pode retorna valor  // retorno é opcional 
-//se não retornar a função retornará undefined 
 //bloco é obrigatório na função tradicional 
 function fun1(){}
 
 // Armazenar em uma variavel , ou seja, função anônima
-//Para invocar a function tem que chamar com os parênteses 
 const fun2 = function (){}
 
 // Armazenar em um array 
