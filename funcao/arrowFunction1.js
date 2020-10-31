@@ -23,16 +23,3 @@ ola = () => {
 ola = () => 'Olá'; // ou      ola = _ => 'Olá';
 console.log(ola())
 
-
-
-let coracao = function(){
-    return 'amor maior';
-}
-
-coracao = () => {
-    return 'amor maior';
-}
-
-coracao = () => 'amor maior';
-
-console.log(coracao())
