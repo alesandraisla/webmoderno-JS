@@ -8,7 +8,7 @@ function minhafuncao(){
 
 function executar(){
     const valor = 'local';
-    minhafuncao()
+    minhafuncao();
 }
 
 executar();

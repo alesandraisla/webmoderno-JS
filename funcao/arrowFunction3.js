@@ -12,7 +12,8 @@ comparaComThis = comparaComThis.bind(obj);
 comparaComThis(global);  //falso
 comparaComThis(obj); // verdadeiro
 
-//this aponta para o objetivo, função foi definida dentro do modulo, então o this não estará no contexto global 
+//this em uma função arrow é um this associado ao contexto na qual a função foi escrita. NÃO TEM VARIAÇÃO.
+//aponta para o objetivo, função foi definida dentro do modulo, então o this não estará no contexto global 
 let comparaComThisArrow = param => console.log(this == param)
 comparaComThisArrow(global); // falso
 comparaComThisArrow(module.exports) // verdadeiro
