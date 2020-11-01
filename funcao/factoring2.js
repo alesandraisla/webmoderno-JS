@@ -1,8 +1,5 @@
-// nome preco criarproduto
+// Adicionando dados a função com objeto
 
-// factoring retorna novo produto
-
-// desconto valor fixo
 
 function criarProduto(nome, preco){
     return{

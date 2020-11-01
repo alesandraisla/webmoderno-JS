@@ -10,6 +10,10 @@ class Pessoa {
 const p1 = new Pessoa('João')
 p1.falar()
 
+//-----------------------------------------------------------------------
+//escopo + abrangente 
+//função factoring que retorna como resposta um objeto
+
 const criarPessoa = nome => {
     return {
         falar: () => console.log(`Meu nome é ${nome}`)
