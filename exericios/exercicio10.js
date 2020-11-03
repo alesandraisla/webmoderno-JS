@@ -5,17 +5,16 @@ ou false.
 */
 
 
-function calcule (x){
-    if(x % 3){
-        return true;
-    } 
-        return false;
+function divisívelPorTres (x){
+
+    return x % 3 == 0;
+  
     
 }
 
-console.log(calcule(2));
-console.log(calcule(8));
-console.log(calcule(5));
-console.log(calcule(3));
-console.log(calcule(9));
-console.log(calcule(6));
+console.log(divisívelPorTres(2));
+console.log(divisívelPorTres(8));
+console.log(divisívelPorTres(5));
+console.log(divisívelPorTres(3));
+console.log(divisívelPorTres(9));
+console.log(divisívelPorTres(6));
