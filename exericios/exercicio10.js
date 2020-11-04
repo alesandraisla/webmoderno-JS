@@ -8,8 +8,7 @@ ou false.
 function divisívelPorTres (x){
 
     return x % 3 == 0;
-  
-    
+      
 }
 
 console.log(divisívelPorTres(2));

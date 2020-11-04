@@ -5,9 +5,9 @@ escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quil
 também um default, que retornará uma mensagem de erro no console.
 */
 
-function vendaDeFrutas(frutas){
+function vendaDeFruta(fruta){
 
-    switch(frutas){
+    switch(fruta){
         case 'maca':
             console.log('Não vendemos esta fruta aqui');
             break;
@@ -26,7 +26,7 @@ function vendaDeFrutas(frutas){
     return ('-------------------------------------------------------')
 }
 
-console.log(vendaDeFrutas('maca'))
-console.log(vendaDeFrutas('kiwi'));
-console.log(vendaDeFrutas('melancia'))
-console.log(vendaDeFrutas('manga'))
+console.log(vendaDeFruta('maca'))
+console.log(vendaDeFruta('kiwi'));
+console.log(vendaDeFruta('melancia'))
+console.log(vendaDeFruta('manga'))

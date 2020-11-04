@@ -44,11 +44,10 @@ function jogos (lista){
         if(lista[i] > lista[numeroMaior]){
             numeroMaior = i;
             console.log('maior', numeroMaior)
-        } else if (lista [i] < lista[numeroMenor]){
+        } 
+        else if (lista [i] < lista[numeroMenor]){
             numeroMenor = i;
-            
             retorno.push(lista [i])
-            
             console.log('menor', numeroMenor)
             console.log(retorno)
         }

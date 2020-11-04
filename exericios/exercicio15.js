@@ -13,13 +13,9 @@ function concessionariaDeAutomoveis(automovel){
             console.log(`Automóvel escolhido foi ${automovel}. Compra efetuada com sucesso!`);
             break;
         case 'sedans':
-            console.log(`Automóvel escolhido foi ${automovel}. Tem certeza que não prefere este modelo?`);
-            break;
         case 'motocicletas':
-            console.log(`Automovel escolhido foi ${automovel}. Tem certeza que não prefere este modelo?`);
-            break;
         case 'caminhonetes':
-            console.log(`Automóvel escolhido foi ${automovel}. Tem cereteza que não prefere este modelo?`);
+            console.log(`Automóvel escolhido foi ${automovel}. Tem certeza que não prefere este modelo?`);
             break;
          default:
              console.log(`Não trabalhamos com este tipo de automóvel aqui. ${automovel}.`);
