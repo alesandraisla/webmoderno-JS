@@ -47,18 +47,30 @@ function numeroPorExtenso(numero){
 
     let mostrarNumeros = {
         '0': 'zero',
-        '1': 'um'
+        '1': 'um',
+        '2': 'dois',
+        '3': 'três',
+        '4': 'quatro',
+        '5': 'cinco',
+        '6': 'seis',
+        '7': 'sete',
+        '8': 'oito',
+        '9': 'nove',
+        '10': 'dez'
     }
     //if(mostrarNumeros.0){
     if(mostrarNumeros[numero]){
         return mostrarNumeros[numero];
     } 
-    return 'errado';
+    return 'Número fora do intervalo.';
 
       
 }
 
-console.log(numeroPorExtenso('0'))
+console.log(numeroPorExtenso('0'));
+console.log(numeroPorExtenso('5'));
+console.log(numeroPorExtenso('10'));
+console.log(numeroPorExtenso('12'));
 
 
 
