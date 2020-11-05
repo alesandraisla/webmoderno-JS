@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fonte.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alesandraisla/webmoderno-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alesandraisla/webmoderno-JS/issues"
+  },
+  "homepage": "https://github.com/alesandraisla/webmoderno-JS#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20"
+  }
+}
