@@ -7,21 +7,20 @@ considerando que todos pagam R$ 100 mais um adicional conforme a seguinte tabela
  4) conveniados acima de 60 anos pagam R$130
 */
 
-
 function tabelaPlanoDeSaude (idade){
+    
+let ValorFixo = 100;
 
-    let ValorFixo = 100;
-
-  if(idade > 0  && idade < 10){
-      return (ValorFixo += 80);
-  } else if (idade >=10 && idade <= 30){
-      return (ValorFixo += 50);
-  } else if (idade > 30 && idade <= 60){
-      return (ValorFixo += 95);
-  } else if (idade > 60){
-      return (ValorFixo += 130);
-  } 
-    return `Informe a idade correta`
+if(idade > 0  && idade < 10){
+    return (ValorFixo += 80);
+} else if (idade >=10 && idade <= 30){
+    return (ValorFixo += 50);
+} else if (idade > 30 && idade <= 60){
+    return (ValorFixo += 95);
+} else if (idade > 60){
+    return (ValorFixo += 130);
+} 
+return `Informe a idade correta`
 
 }
 console.log(tabelaPlanoDeSaude(8) == 180)

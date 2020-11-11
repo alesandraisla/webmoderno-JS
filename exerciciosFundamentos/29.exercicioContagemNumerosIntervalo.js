@@ -4,10 +4,6 @@ deste vetor estão no intervalo [10,20] (repare que o intervalo é fechado, ou s
 deles estão fora do intervalo, escrevendo estas informações.
 */
 
-let numero = []
-for (indice = 0; indice < numero.length; indice++){
-}
-
 function conteNumerosDeIntervalo(listaDeNumeros){
     quantidadeNumerosIntervalo = 0;
 

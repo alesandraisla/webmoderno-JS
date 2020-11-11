@@ -10,7 +10,6 @@ todos os caracteres (independentemente de ser maiúsculo ou minúsculo) estejam 
 //     } else {
 //         return false;
 //     }
-  
 // }
 
 // console.log(StringVerdadeiraOuFalsa('azul', 'rosa'));

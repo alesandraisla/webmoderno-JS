@@ -10,14 +10,12 @@ function impressaoDeNumerosImpares(inicio = 0, fim = 100){
      fim = inicio - fim
      inicio = inicio -fim
    }
-
   for(let i = inicio; i <= fim; i++){
      if(i % 2 == 1){
        console.log(i)
      }
   }
-
 }
 
-impressaoDeNumerosImpares(19,3)
-impressaoDeNumerosImpares(15,10)
+impressaoDeNumerosImpares(19,3);
+impressaoDeNumerosImpares(15,10);
