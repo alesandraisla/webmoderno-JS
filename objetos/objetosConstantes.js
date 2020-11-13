@@ -16,7 +16,7 @@ pessoa.nome = 'Tidus'
 console.log(pessoa)
 
 
-//nem referência e objeto que foi criado pode ser mudado
+//Nem a referência e objeto que foi criado pode ser mudado
 const pessoaConstante = Object.freeze({nome: 'Vanessa'})
 pessoaConstante.nome = 'Beatriz'
 console.log(pessoaConstante)

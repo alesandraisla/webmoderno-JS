@@ -48,7 +48,7 @@ const filha = Object.create(null)
 filha.nome = 'Ana'
 console.log(filha)
 
-//Uma função famosa que retorna Object...
+//Uma função famosa que retorna Object...  JSON é texto
 const fromJSON = JSON.parse('{"info": "Sou um JSON"}');
 console.log(fromJSON.info)
 

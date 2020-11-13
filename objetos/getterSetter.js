@@ -1,5 +1,5 @@
 const sequencia = {
-    _valor: 1, // convenção que é uma variavel para acessar internamente 
+    _valor: 1, // convenção que é para acessar internamente não permitindo alteraçao, porém não é obrigatório
     get valor(){ return this._valor++},
     set valor(valor) { //validação atribuir 
         if(valor > this._valor){
@@ -7,7 +7,6 @@ const sequencia = {
         }
     } 
 }
-
 
 console.log(sequencia.valor, sequencia.valor, sequencia.valor);
 console.log(sequencia._valor, sequencia._valor);
