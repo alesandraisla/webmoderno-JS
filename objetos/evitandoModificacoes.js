@@ -14,14 +14,18 @@ delete produto.tag
 console.log(produto)
 
 //Object.seal
-//selar não consegue add novos atributos, nem exclui, mas consegue modificar os valores dos atributos do objeto
+//selar não consegue add novos atributos, nem excluir, mas consegue modificar os valores dos atributos do objeto
 const pessoa = { nome: 'Vanessa', idade: 35}
 
 Object.seal(pessoa)
 console.log(pessoa)
 console.log('Selado:', Object.isSealed(pessoa))
 
-pessoa.sobrenome = 'Silva'
-delete pessoa.nome;
+pessoa.sobrenome = 'Silva' //Não funcionará
+delete pessoa.nome;  //Não funcionará
 pessoa.idade = 20;
 console.log(pessoa)
+
+
+// Object.freeze = selado + valores constantes
+

@@ -26,4 +26,4 @@ obj3.falar();
 console.log((new MeuObjeto).__proto__ === MeuObjeto.prototype); // true
 console.log(MeuObjeto.__proto__ === Function.prototype);    //função // true 
 console.log(Function.prototype.__proto__ === Object.prototype)  //true 
-console.log(Object.prototype.__proto__ === null)
+console.log(Object.prototype.__proto__ === null)  // true 

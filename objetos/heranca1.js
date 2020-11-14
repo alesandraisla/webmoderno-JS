@@ -15,7 +15,7 @@ const volvo = {
 console.log(ferrari.__proto__);  //forma que acessa
 console.log(ferrari.__proto__ === Object.prototype);
 console.log(volvo.__proto__ === Object.prototype);
-console.log(typeof ferrari);
+
 
 //O protótipo do Object.prototype será null
 console.log(Object.prototype.__proto__);
