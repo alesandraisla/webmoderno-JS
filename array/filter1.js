@@ -1,6 +1,5 @@
-/*filter
+/*filter -> função callback que retorna verdadeiro ou falso, recebe item atual, indice e array 
 A filtragem dos elementos será ou igual que o array ou menor.
-
 */
 
 const produtos = [
@@ -15,8 +14,6 @@ const produtos = [
 // }))
 
 //Métodos encadeados
-
-
 const produtoCaro = produto => produto.preco > 500;
 const fragil = produto => produto.fragil;
 

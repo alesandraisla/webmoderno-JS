@@ -14,7 +14,7 @@ console.log(resultado)
 
 const somar10 = elemento => elemento + 10
 const triplo = elemento => elemento * 3
-const paraDinheiro = elemento => `R$ ${parseFloat(elemento). toFixed(2). replace('.', ',')}`
+const paraDinheiro = elemento => `R$ ${parseFloat(elemento).toFixed(2).replace('.', ',')}`
 
 resultado = numeros.map(somar10).map(triplo).map(paraDinheiro);
 

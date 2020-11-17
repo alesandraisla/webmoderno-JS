@@ -14,11 +14,11 @@ let converterParaObjeto = json => JSON.parse(json)
 //     return JSON.parse(json)
 // }
 
-//let apenasPreco = produto => produto.preco;
+let apenasPreco = produto => produto.preco;
 
-function apenasPreco(produto){
-    return produto.preco;
-}
+// function apenasPreco(produto){
+//     return produto.preco;
+// }
 
 let resultado = carrinho.map(converterParaObjeto).map(apenasPreco)
 

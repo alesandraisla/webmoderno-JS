@@ -16,9 +16,9 @@ console.log(alunos.map(a => a.bolsista).reduce(todosBolsistas))
 
 const algumBolsista = (resultado, bolsista) => resultado || bolsista;
 
-console.log(alunos.map(a => a.bolsista).reduce(algumBolsista))
+console.log(alunos.map(a => a.bolsista).reduce(algumBolsista)) // retorna true ou false
 
-console.log(alunos.map(a => a.bolsista)); // retorna um arrau 
+console.log(alunos.map(a => a.bolsista)); // retorna um array
 
 
 
