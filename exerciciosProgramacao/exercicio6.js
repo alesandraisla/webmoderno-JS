@@ -25,5 +25,3 @@ console.log(inverter(true))
 console.log(inverter("programação"))
 console.log(inverter("5"))
 console.log(inverter(new Date()))
-
-

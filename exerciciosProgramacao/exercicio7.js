@@ -8,7 +8,6 @@ considerando se numero é igual a minimo ou a maximo.
 */
 
 function estaEntre (numero, minimo, maximo, inclusivo = false){
- 
     
     if(inclusivo && (numero >= minimo && numero <= maximo)){
         return true
@@ -19,10 +18,6 @@ function estaEntre (numero, minimo, maximo, inclusivo = false){
     return false;
 }
 
-// console.log(estaEntre(10, 100, 50))
-// console.log(estaEntre(16, 100, 160))
-// console.log(estaEntre(3, 150, 3))
-// console.log(estaEntre(3,150,3, true))
 
 console.log(estaEntre(10,1,10))
 console.log(estaEntre(10,1,10, true))
