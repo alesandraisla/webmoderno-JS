@@ -7,16 +7,13 @@ não for igual, retorne "Que pena! O número sorteado foi o X". X é o número q
 
 function sorteio(numeroInformado) {
     
-    const numeroSorteado = (Math.floor(Math.random() * 10 + 1))
-
-
+    const numeroSorteado = (Math.floor(Math.random() * 10 + 1));
     if(numeroSorteado === numeroInformado){
         return `Parabéns! O número sorteado foi o ${numeroSorteado}`;
     }
-
     return `Que pena! O número sorteado foi o ${numeroSorteado}`
 }
 
-console.log(sorteio(1))
+console.log(sorteio(10))
 console.log(sorteio(5))
-console.log(sorteio(8))
+console.log(sorteio(85))
