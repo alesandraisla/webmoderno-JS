@@ -11,4 +11,6 @@ function menorNumero (...numeros){
 //     return Math.min.apply(Math, numeros);
 // }
 
-console.log([menorNumero(5,100,423,11,25,36,75)])
+
+console.log([menorNumero(5, -15, 50, 3)])
+console.log([menorNumero(10, 5, 35, 65)])
