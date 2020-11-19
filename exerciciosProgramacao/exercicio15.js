@@ -16,21 +16,7 @@ pares e que também tenham índices pares.
 // })
 
 
-function apenasPar (numerosDeArray){
-    let numerosDeArray = [10, 70, 22, 43]
 
-    for(let i = 0; i < numerosDeArray; i++){
-        if(numerosDeArray[i] % 2 == 0){
-            console.log(numerosDeArray[i])
-            i++;
-        }
-                
-    }
-}
-
-
-
-apenasPar()
 
 
 
