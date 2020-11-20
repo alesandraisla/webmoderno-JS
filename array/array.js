@@ -7,7 +7,7 @@ let aprovados = new Array ('Bia', 'Carlos', 'Ana');
 console.log(aprovados)
 
 
-//recomendaos
+//recomendações
 aprovados = ['Bia', 'Carlos', 'Ana']
 console.log(aprovados[0])
 console.log(aprovados[1])
