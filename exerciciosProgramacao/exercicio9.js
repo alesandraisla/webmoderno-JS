@@ -23,8 +23,7 @@ que o segundo será o número de vezes que haverá repetição. Um array será r
 // //VERIFICAR AMANHÃ 
 // console.log(repeticaoDeNumeros("codigo",2))
 
-
-
+//FALTA
 
 function verificar (numero, vezes){
 

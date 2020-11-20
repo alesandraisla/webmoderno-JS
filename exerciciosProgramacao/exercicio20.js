@@ -4,7 +4,6 @@ Criar uma função que receba um array de números e retorne o menor número des
 
 function menorNumero (...numeros){
     return Math.min(...numeros);
-
 }
 
 // function menorNumero (...numeros){
@@ -12,5 +11,5 @@ function menorNumero (...numeros){
 // }
 
 
-console.log([menorNumero(5, -15, 50, 3)])
 console.log([menorNumero(10, 5, 35, 65)])
+console.log([menorNumero(5, -15, 50, 3)])

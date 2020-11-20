@@ -6,16 +6,15 @@ Com o intuito de realizar esse cálculo, crie uma função que receba um array c
 indeterminada de números e retorne a média simples desses números.
 */
 
-function mediaDoArray (...numero){
+function mediaDoArray (...array){
+    let somaDoArray = 0;
+    let mediaArray = 0;
 
-    let soma = 0;
-    let media = 0;
-
-    for(let i = 0; i < numero.length; i++){
-        soma += numero[i];
-        media = soma / numero.length;
+    for(let i = 0; i < array.length; i++){
+        somaDoArray += array[i];
+        mediaArray = somaDoArray / array.length;
     }
-    return media;
+    return mediaArray;
 }
 
 console.log(mediaDoArray(2,4,5,3) == 3.5) // 3.5

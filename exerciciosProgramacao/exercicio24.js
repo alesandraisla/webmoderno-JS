@@ -5,9 +5,7 @@ Escreva uma função que recebe como primeiro parâmetro uma palavra e, como seg
 de strings. A função deverá filtrar as palavras do array que contêm nelas a string do primeiro parâmetro.
 */
 
-
 function buscaPalavrasSemelhantes(palavraDigitada, palavrasEncontradas){
-    
     
     let filtragem = palavrasEncontradas.filter(function(elementoDaPalavraEncontrada){
         return elementoDaPalavraEncontrada.toLowerCase().indexOf(palavraDigitada.toLowerCase()) >-1;

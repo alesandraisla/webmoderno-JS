@@ -5,7 +5,6 @@ Criar uma função que receba uma string como parâmetro e conte quantas palavra
 function contarPalavras (frase){
     let conversaoDaFrase = frase.split(" ")
     let quantidadeDePalavras = 0;
-
     for(let i = 1; i <= conversaoDaFrase.length; i++){
         quantidadeDePalavras = i;
     }
