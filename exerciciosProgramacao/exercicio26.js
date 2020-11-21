@@ -11,7 +11,6 @@ function inverter(colecaoChaveValor){
     Object.entries(colecaoChaveValor).forEach(elemento => {
         console.log(`{${elemento[1]} : ${elemento [0]}}`)
     })
-
 }
 
 inverter()

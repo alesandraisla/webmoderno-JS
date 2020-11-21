@@ -11,9 +11,10 @@ function multiplicarSemOperador (numero1, numero2){
         return `Retornará ${resultado = 0}`;
     }
     for(let i = 1; i <= numero2; i++){
-        resultado += numero2;
+         resultado += numero2;
         numero1++
     }
+
     return `Retornará ${resultado}`;
 }
 

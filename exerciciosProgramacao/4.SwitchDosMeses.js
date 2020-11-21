@@ -35,4 +35,7 @@ function nomeDoMes (numeroDoMes){
     }
 }
 
-console.log(nomeDoMes(5));
+console.log(nomeDoMes(1) == 'Janeiro'); // teste
+console.log(nomeDoMes(1));
+console.log(nomeDoMes(4) == 'Abril'); // teste
+console.log(nomeDoMes(4));

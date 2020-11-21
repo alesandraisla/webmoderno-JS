@@ -8,7 +8,7 @@ de entrada não for de nenhum dos tipo acima, retorne "booleano ou número esper
 tipo ...".
 */
 
-function inverter (valor){
+function inverso (valor){
 
     if(typeof(valor) == "boolean"){
         return !valor;
@@ -16,12 +16,12 @@ function inverter (valor){
         return valor * -1;
     } 
     
-    return `booleano ou número esperados, mas o parâmetro é do tipo`
+    return `booleano ou número esperados, mas o parâmetro é do tipo string`
 }
 
 
-console.log(inverter(-2000))
-console.log(inverter(true))
-console.log(inverter("programação"))
-console.log(inverter("5"))
-console.log(inverter(new Date()))
+console.log(inverso(-2000))
+console.log(inverso(true))
+console.log(inverso("programação"))
+console.log(inverso("5"))
+console.log(inverso(new Date()))

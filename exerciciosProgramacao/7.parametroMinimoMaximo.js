@@ -21,3 +21,4 @@ function estaEntre (numero, minimo, maximo, inclusivo = false){
 
 console.log(estaEntre(10,1,10))
 console.log(estaEntre(10,1,10, true))
+

@@ -5,16 +5,13 @@ O retorno da função deve ser a string "Salário igual a R$ X",
  em que X é o quanto o funcionário ganhou no mês.
 */
 
-function salarioDoFuncionarioDoMes (horasTrabalhadas, salario){
+function salarioDoMes (horasTrabalhadas, salario){
     
-     let salarioAtual = horasTrabalhadas * salario;
-
+    let salarioAtual = horasTrabalhadas * salario;
     return `Salário igual a R$ ${salarioAtual.toFixed(2)}`
 }
 
-console.log(salarioDoFuncionarioDoMes(150, 40.5))
+//Function Arrow
+// let salarioDoMes = (horasTrabalhadas, salario) => `Salário igual a R$ ${horasTrabalhadas * salario}`
 
-
-// let salarioFuncionario = (hora, salario) => `Salário igual a R$ ${(hora * salario)}`
-
-// console.log(salarioFuncionario(150,40.5))
+console.log(salarioDoMes(150, 40.5))
