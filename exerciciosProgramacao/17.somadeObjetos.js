@@ -4,13 +4,17 @@ possível adicionar produtos ou serviços, informando nome, categoria e preço. 
 está desenvolvendo no momento é a de somar o total das despesas.
 Crie uma função que receba um array de produtos e retorne o total das despesas
 */
-
-
 //function factory
 
-function despesasTotais(nome, categoria, preco){
+
+const despesa1 = despesasTotais('Jornal online', 'Informação', 89.99)
+const despesa2 = despesasTotais('Cinema', 'Entretenimento', 150)
+const despesa3 = despesasTotais('Galaxy S20', 'Eletrônicos', 3599.99)
+const despesa4 = despesasTotais('Macbook Pro', 'Eletrônicos', 30999.90)
+
+function despesasTotais(nomeDaDespesa, categoria, preco){
     return {
-        nome,
+        nomeDaDespesa,
         categoria,
         preco,
         getPreco(){
@@ -21,11 +25,5 @@ function despesasTotais(nome, categoria, preco){
         }
     }
 }
-
-
-const despesa1 = despesasTotais('Jornal online', 'Informação', 89.99)
-const despesa2 = despesasTotais('Cinema', 'Entretenimento', 150)
-const despesa3 = despesasTotais('Galaxy S20', 'Eletrônicos', 3599.99)
-const despesa4 = despesasTotais('Macbook Pro', 'Eletrônicos', 30999.90)
 
 console.log(despesa1.getPreco(), despesa3.getPreco2())

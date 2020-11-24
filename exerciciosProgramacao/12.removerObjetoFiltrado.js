@@ -8,14 +8,30 @@ Você escreverá uma função que recebe um objeto como primeiro parâmetro e, c
 nome de uma propriedade contida nesse objeto. Em seguida, retorne uma cópia desse objeto sem a
 propriedade especificada no segundo parâmetro.
 */
-//falta
+//for in key p acessar o objeto e pegar o valor if encontrar a key objeto valor
 
-removerPropriedade({
-    id: 20,
-    nome: "Caneta",
-    descricao: "Não preenchido"
-}, "descricao")
 
-Object.is(removerPropriedade(objeto, "descricao"), objeto)
+function removerPropriedade(objetoFiltrado, elementoAserRetirado){
 
-//removerPropriedade({a:1, b:2}, "a")
+    let novoObjeto = {}
+
+    for (const atributo in objetoFiltrado) {
+        novoObjeto[atributo] = objetoFiltrado[atributo]
+    }
+
+    delete novoObjeto[elementoAserRetirado]
+
+    return novoObjeto;
+}
+
+console.log(removerPropriedade({nome:'Suzy' , idade: 25, peso: 50}, "idade"))
+
+
+let pessoa = {
+    'nome': 'Mimi',
+    "1": 15,
+    'nome completo': 'mniasnidnida sinadinsai insid'
+}
+
+console.log(pessoa['nome completo'])
+console.log(pessoa[1])

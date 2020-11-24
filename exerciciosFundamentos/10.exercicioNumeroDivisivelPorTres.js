@@ -13,3 +13,4 @@ console.log(divisívelPorTres(5));
 console.log(divisívelPorTres(3));
 console.log(divisívelPorTres(9));
 console.log(divisívelPorTres(6));
+

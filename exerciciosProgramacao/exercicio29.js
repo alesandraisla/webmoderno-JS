@@ -4,36 +4,33 @@ num array, conforme exemplo abaixo. Você deverá calcular a média da nota de c
 com os atributos nome e media, que indica o aluno que teve o melhor desempenho nas notas.
 */
 
-function receberMelhorEstudante (notasDosEstudantes){
-
-    let mediaAluno1, somaAluno2, mediaAluno3  = 4;
-    let somaAluno1, mediaAluno2, mediaAluno3  = 0;
-    let resultadoAluno1, resultadoAluno2, resultadoAluno3 = 0;
-      
-    let estudante = notasDosEstudantes.joao.map(function(valor, indice, outro){
-        somaAluno1 +=valor;
-        resultadoAluno1= somaAluno1 / mediaAluno1
-    })
-
-    let estudante2 = notasDosEstudantes.mariana.map(function(valor, indice, outro){
-        somaAluno2+=valor;
-        resultadoAluno2 = somaAluno2 / mediaAluno2
-    })
-
-    let estudante3 = notasDosEstudantes.Carla.map(function(valor, indice, outro){
-        somaAluno3 += valor;
-        resultadoAluno3 = somaAluno3 / mediaAluno3
-    })
-
-    if(resultadoAluno1 > resultadoAluno2 && resultado1 > resultadoAluno3){
-        return (`{ nome: "Joao", media ${resultadoAluno1} }`)
-    } else if (resultadoAluno2 > resultadoAluno1 && resultadoAluno2 > resultadoAluno3){
-        return  (`{ nome: "Mariana", media ${resultadoAluno2} }`)
+function melhoresEstudantes(alunos) {
+    let resultado = {nome: null, media: 0}
+    
+    for (let nome in alunos) {
+        let mediaDoAluno = calcularMediaDeAluno(alunos[nome])
+       
+        if(mediaDoAluno > resultado.media){
+           resultado.media = mediaDoAluno;
+           resultado.nome = nome;
+        }
     }
-    return (`{ nome: "Carla", media ${resultadoAluno3} }`)
+
+    return resultado;
 }
 
-console.log(receberMelhorEstudante({joao: [8,7.6,8.9,6], mariana: [9, 6.6, 7.9, 8], Carla: [7, 7, 8, 9]}))
+function calcularMediaDeAluno(listaDeNotas) {
 
+    let soma = 0;
+    
+    for(const nota of listaDeNotas){
+        soma += nota   
+    }
+    
+    return  soma / listaDeNotas.length;;
 
+}
 
+// console.log(calcularMediaDeAluno([8, 7.6, 8.9, 6]))
+
+ console.log(melhoresEstudantes({joao: [8, 7.6, 8.9, 6], mariana: [9, 6.6, 7.9, 8], Carla: [7, 7, 8, 9]}))

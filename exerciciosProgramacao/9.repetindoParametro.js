@@ -6,6 +6,7 @@ que o segundo será o número de vezes que haverá repetição. Um array será r
 function repeticaoDeParametro (elementoARepetir, numeroDaRepeticao){
 
     const conjunto = []
+//Usando for
 //    for(let indice = 1; indice <= numeroDaRepeticao; indice++){
 //        conjunto.push(elementoARepetir)
 //    }
@@ -20,3 +21,4 @@ function repeticaoDeParametro (elementoARepetir, numeroDaRepeticao){
 
 console.log(repeticaoDeParametro(7,3))
 console.log(repeticaoDeParametro("codigo",2))
+
