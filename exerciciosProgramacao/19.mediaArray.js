@@ -6,23 +6,23 @@ Com o intuito de realizar esse cálculo, crie uma função que receba um array c
 indeterminada de números e retorne a média simples desses números.
 */
 
-// function mediaDeInvestimento (valoresInvestidos){
-//     let somaDoInvestimento = 0;
-//     let mediaDoInvestimento = 0;
+function mediaDeInvestimento (valoresInvestidos){
+    let somaDoInvestimento = 0;
+    let mediaDoInvestimento = 0;
 
-//     for(let i = 0; i < valoresInvestidos.length; i++){
-//         somaDoInvestimento += valoresInvestidos[i];
-//         mediaDoInvestimento = somaDoInvestimento / valoresInvestidos.length;
-//     }
-//     return mediaDoInvestimento;
-// }
+    for(let i = 0; i < valoresInvestidos.length; i++){
+        somaDoInvestimento += valoresInvestidos[i];
+        mediaDoInvestimento = somaDoInvestimento / valoresInvestidos.length;
+    }
+    return mediaDoInvestimento;
+}
 
-// console.log(mediaDeInvestimento([2,4,5,3]) == 3.5) // 3.5
-// console.log(mediaDeInvestimento([2,4,5,3])) // 3.5
-// console.log(mediaDeInvestimento([1, 2, 3, 4,5])== 3) // 3
-// console.log(mediaDeInvestimento([1, 2, 3, 4,5])) // 3
-// console.log(mediaDeInvestimento([0, 10]) == 5) // 5
-// console.log(mediaDeInvestimento([0, 10])) // 5
+console.log(mediaDeInvestimento([2,4,5,3]) == 3.5) // 3.5
+console.log(mediaDeInvestimento([2,4,5,3])) // 3.5
+console.log(mediaDeInvestimento([1, 2, 3, 4,5])== 3) // 3
+console.log(mediaDeInvestimento([1, 2, 3, 4,5])) // 3
+console.log(mediaDeInvestimento([0, 10]) == 5) // 5
+console.log(mediaDeInvestimento([0, 10])) // 5
 
 
 //Usando forOF =======================================================
@@ -43,16 +43,18 @@ indeterminada de números e retorne a média simples desses números.
 // console.log(calcularMedia([0, 10])) // 5
 
 
-function calcularMedia(numeros) {
-    const quantidadeDeNumeros = numeros.length;
-    const somaTotal = numeros.reduce((numeroA, numeroB) => numeroA + numeroB)
+//Usando reduce ====================================================================
 
-    return somaTotal / quantidadeDeNumeros
-}
+// function calcularMedia(numeros) {
+//     const quantidadeDeNumeros = numeros.length;
+//     const somaTotal = numeros.reduce((numeroA, numeroB) => numeroA + numeroB)
+
+//     return somaTotal / quantidadeDeNumeros
+// }
 
 
 
-console.log(calcularMedia([2,4,5,3])) // 3.5
-console.log(calcularMedia([1, 2, 3, 4,5])) // 3
-console.log(calcularMedia([0, 10])) // 5
+// console.log(calcularMedia([2,4,5,3])) // 3.5
+// console.log(calcularMedia([1, 2, 3, 4,5])) // 3
+// console.log(calcularMedia([0, 10])) // 5
 

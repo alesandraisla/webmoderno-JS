@@ -2,6 +2,11 @@
 Criar uma função que receba um array de números e retorne o menor número desse array
 */
 
+
+
+//Math.min com destructuring =====================================================
+
+
 function menorNumero(grupoDeNumeros) {
     return Math.min(...grupoDeNumeros);
 }
@@ -9,7 +14,7 @@ function menorNumero(grupoDeNumeros) {
 console.log(menorNumero([10, 5, 35, 65]))
 console.log(menorNumero([5, -15, 50, 3]))
 
-//
+//Usando apply ===========================================================
 
 // function menorNumero(grupoDeNumeros) {
 //     return Math.min.apply(Math, grupoDeNumeros)
@@ -18,7 +23,7 @@ console.log(menorNumero([5, -15, 50, 3]))
 // console.log(menorNumero([10, 5, 35, 65]))
 // console.log(menorNumero([5, -15, 50, 3]))
 
-//Usando forIN e IF =======================================
+//Usando forIN e IF =======================================================
 
 // function menorNumero(numeros) {
 //     let menor = numeros[0]
@@ -44,13 +49,3 @@ console.log(menorNumero([5, -15, 50, 3]))
 // console.log(menorNumero([5, -15, 50, 3]))
 
 
-
-//Math.min com destructuring =====================================================
-
-// function menorNumero(numeros){
-//     return Math.min(...numeros)
-// }
-
-
-// console.log(menorNumero([10, 5, 35, 65]))
-// console.log(menorNumero([5, -15, 50, 3]))
