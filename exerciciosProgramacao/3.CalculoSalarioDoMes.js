@@ -5,13 +5,16 @@ O retorno da função deve ser a string "Salário igual a R$ X",
  em que X é o quanto o funcionário ganhou no mês.
 */
 
-function salarioDoMes (horasTrabalhadas, salario){
+function calcularSalarioLiquidoPorMes(horasTrabalhadas, salarioPorHora) {
     
-    let salarioAtual = horasTrabalhadas * salario;
-    return `Salário igual a R$ ${salarioAtual.toFixed(2)}`
+    let salarioBruto = (horasTrabalhadas * salarioPorHora) 
+    let salarioLíquido  = salarioBruto - salarioBruto * 30/100
+
+    return `Salário igual a R$ ${salarioLíquido.toFixed(2)}`
 }
 
-//Function Arrow
-// let salarioDoMes = (horasTrabalhadas, salario) => `Salário igual a R$ ${horasTrabalhadas * salario}`
 
-console.log(salarioDoMes(150, 40.5))
+console.log(calcularSalarioLiquidoPorMes(150, 40.5))
+console.log(calcularSalarioLiquidoPorMes(180, 60))
+
+

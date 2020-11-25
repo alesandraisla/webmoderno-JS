@@ -2,18 +2,36 @@
 função) e com ponto de exclamação "!" no final.
 */
 
-// function array
-let cumprimentar2 = nomeDaPessoa => `Olá, ${nomeDaPessoa}!`
+//=========Usando join e concat===========================
+
+// function cumprimentar1(nome) {
+//     const saudacao = "Olá"
+//     return [saudacao, nome].join(', ').concat("!")
+// }
+
+// console.log(cumprimentar1("Barbie"))
 
 
-//function
+// =========Concatenando normal =================================
+// function cumprimentar2(nome) {
+//     return "Olá, " + nome + "!"
+
+// }
+
+// console.log(cumprimentar2("Barbie"))
+
+
+// ========= function array usando template string =====================
+let cumprimentar3 = nomeDaPessoa => `Olá, ${nomeDaPessoa}!`
+
+
+// function
 // function cumprimentar2(nomeDaPessoa) {
 //     return `Olá, ${nomeDaPessoa}!`
 // }
 
+console.log(cumprimentar3('Suzy'))
 
-console.log(cumprimentar2('Suzy'))
-console.log(cumprimentar2('Barbie'))
 
 
 

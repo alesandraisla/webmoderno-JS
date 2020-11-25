@@ -7,6 +7,7 @@ Com isso em mente, desenvolva uma função que recebe um número correspondente 
 é bissexto ou não.
 */
 
+//Usando if e else ================================================================
 
 function anobissexto(ano){
     if(ano <= 0){
@@ -27,3 +28,29 @@ console.log(anobissexto(800))  // verdadeiro
 console.log(anobissexto(2021)) // falso
 console.log(anobissexto(2020)) // verdadeiro
 console.log(anobissexto(2100)) // falso  
+
+
+//Usando consts ==================================================================
+
+// function checarAnoBissexto(ano) {
+//     const divisivelPorQuatro = ano % 4 == 0
+//     const divisivelPorCem = ano % 100 == 0
+//     const divisivelPorQuatrocentos = ano % 400 == 0
+
+//     return (divisivelPorQuatro && !divisivelPorCem) || divisivelPorQuatrocentos
+
+// }
+
+
+// console.log(checarAnoBissexto(2020)) // verdadeiro
+// console.log(checarAnoBissexto(2100)) // falso  
+
+
+//checa-se indiretamente, verificando se o mês de fevereiro do dado ano tem 29 dias ========================
+
+// function checarAnoBissexto(ano) {
+//     return new Date(ano, 1, 29).getDate() === 29;
+// }
+
+// console.log(checarAnoBissexto(2020)) // verdadeiro
+// /console.log(checarAnoBissexto(2100)) // falso  

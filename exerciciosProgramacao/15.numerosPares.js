@@ -3,21 +3,40 @@ Elabore uma função que receba um array de números e retorne um array que tenh
 pares e que também tenham índices pares.
 */
 
-function soNumerosPares (conjuntoDeNumeros){
+
+//Usando for e if ==================================================
+
+
+function receberSomenteOsParesDeIndicesPares(conjuntoDeNumeros) {
    
-    let novo = []
-  console.log(conjuntoDeNumeros)
-    for(let i =0; i <= conjuntoDeNumeros.length; i++){
+   let resultado = []
+  
+    for(let i =0; i <= conjuntoDeNumeros.length; i += 2) {
         if(conjuntoDeNumeros[i] % 2 == 0){
-            novo.push(conjuntoDeNumeros[i])
+            resultado.push(conjuntoDeNumeros[i])
         }
     }
-    return novo;
+    return resultado;
 }
 
-console.log(soNumerosPares([10, 70, 22, 43]))
-console.log(soNumerosPares([1, 2, 3, 4]))
+console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]))
+console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]))
 
+
+//Usando filter =========================================================
+
+// function receberSomenteOsParesDeIndicesPares(numeros) {
+//     return numeros.filter((numero, indice) => {
+//         const numeroPar = numero % 2 === 0
+//         const indicePar = indice % 2 === 0
+
+//         return numeroPar && indicePar;
+//     })
+// }
+
+
+// console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]))
+// console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]))
 
 
 

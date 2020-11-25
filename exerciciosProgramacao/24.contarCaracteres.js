@@ -81,6 +81,15 @@ console.log(contar("c", "Conhece-te a ti mesmo") == 1) // teste
 console.log(contar("c", "Conhece-te a ti mesmo"))
 
 
+function contarCaractere(caractereBuscado, frase) {
+    return [...frase].filter(caractere => caractere === caractereBuscado).length;
+}
+
+
+
+console.log(contarCaractere("r", "A sorte favorece os audazes"))
+console.log(contarCaractere("c", "Conhece-te a ti mesmo"))
+
 
 
 

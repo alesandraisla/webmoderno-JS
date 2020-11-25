@@ -14,8 +14,19 @@ i -> case insensitive. Não faz distinção entre maiúsculas e minúsculas.
 // }
 
 
-let removerVogais = palavra => palavra.replace(/[aeiouàá-ú]/gi, '');
+// let removerVogais = palavra => palavra.replace(/[aeiouàá-ú]/gi, '');
 
+
+// console.log(removerVogais("Cod3r"))
+// console.log(removerVogais("Fundamentos"))
+
+
+function removerVogais(frase) {
+    const vogais = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+    vogais.forEach(vogal => frase = frase.replace(vogal, ''))
+
+    return frase;
+}
 
 console.log(removerVogais("Cod3r"))
 console.log(removerVogais("Fundamentos"))

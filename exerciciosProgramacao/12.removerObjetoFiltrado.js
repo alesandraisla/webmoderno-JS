@@ -15,8 +15,8 @@ function removerPropriedade(objetoFiltrado, elementoAserRetirado){
 
     let novoObjeto = {}
 
-    for (const atributo in objetoFiltrado) {
-        novoObjeto[atributo] = objetoFiltrado[atributo]
+    for (const chave in objetoFiltrado) {
+        novoObjeto[chave] = objetoFiltrado[chave]
     }
 
     delete novoObjeto[elementoAserRetirado]
@@ -27,11 +27,31 @@ function removerPropriedade(objetoFiltrado, elementoAserRetirado){
 console.log(removerPropriedade({nome:'Suzy' , idade: 25, peso: 50}, "idade"))
 
 
-let pessoa = {
-    'nome': 'Mimi',
-    "1": 15,
-    'nome completo': 'mniasnidnida sinadinsai insid'
-}
 
-console.log(pessoa['nome completo'])
-console.log(pessoa[1])
+//Usando assign ==============================================================
+
+// function removerPropriedade(objeto, nomeDaPropriedade) {
+//     const copia = Object.assign({}, objeto)
+//     delete copia[nomeDaPropriedade]
+
+//     return copia;
+// }
+
+// console.log(removerPropriedade({nome:'Suzy' , idade: 25, peso: 50}, "idade"))
+
+
+
+
+//Usando destructuring ==================================================================
+
+// function removerPropriedade(objeto, nomeDaPropriedade) {
+//     const copia = {...objeto}
+//     delete copia[nomeDaPropriedade]
+
+//     return copia
+// }
+
+// console.log(removerPropriedade({nome:'Suzy' , idade: 25, peso: 50}, "idade"))
+
+
+

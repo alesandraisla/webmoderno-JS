@@ -3,10 +3,12 @@ Faça uma função que recebe a base e a altura de um triângulo e retorne a ár
 deverá ser de duas casas decimais, arredondando se necessário.
 */
 
-let resultadoDoTriangulo =0;
+
 
 function areaDeTriangulo (base, altura){
-    resultadoDoTriangulo = base * altura /2
+
+   const resultadoDoTriangulo = (base * altura) / 2
+   
     return resultadoDoTriangulo.toFixed(2)
 }
 

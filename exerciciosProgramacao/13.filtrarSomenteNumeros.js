@@ -12,3 +12,30 @@ let filtrarNumero2 = ["a", "c"].filter(somenteNumero);
 
 console.log(filtrarNumero1, filtrarNumero2)
 
+//Usando for e push ================================================================
+
+// function filtrarNumeros(array) {
+//     const resultado = []
+
+//     for(let item of array){
+//         if(typeof item === "number")
+//         resultado.push(item)
+//     }
+//     return resultado
+// }
+
+// console.log(filtrarNumeros(["Javascript", 1, "3", "web", 20]))
+// console.log(filtrarNumeros(["a", "c"]))
+
+
+
+//Usando filter e function arrow ===========================================================
+
+
+// function filtrarNumeros(array) {
+//     return array.filter(item => typeof item === "number")
+// }
+
+// console.log(filtrarNumeros(["Javascript", 1, "3", "web", 20]))
+// console.log(filtrarNumeros(["a", "c"]))
+

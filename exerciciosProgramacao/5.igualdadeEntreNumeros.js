@@ -2,25 +2,13 @@
 Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo.
 */
 
-//função
-// function maiorouIgual (valor1, valor2){
 
-//     if(valor1 === valor2){
-//         return true
-//     }
-//     return false
-// }
+function maiorOuigual(primeiro, segundo){
+    if(typeof primeiro != typeof segundo) return false
 
-// console.log(maiorouIgual(0,0))
-// console.log(maiorouIgual(0,"0"))
-// console.log(maiorouIgual(5,1))
+    return primeiro >=  segundo
+}
 
-
-let igualdadeEntreNumeros = (numero1, numero2) => (numero1 === numero2);
-
-console.log(igualdadeEntreNumeros(0,0) == true) //teste
-console.log(igualdadeEntreNumeros(0,0))
-console.log(igualdadeEntreNumeros(0, "0") == false)//teste
-console.log(igualdadeEntreNumeros(0, "0"))
-console.log(igualdadeEntreNumeros(5,1) == false)//teste
-console.log(igualdadeEntreNumeros(5,1))
+console.log(maiorOuigual(5,1))
+console.log(maiorOuigual(0,0))
+console.log(maiorOuigual(0 , "0"))
