@@ -1,9 +1,9 @@
 const fs = require('fs')
 
 const caminho = __dirname + '/arquivo.json'
-console.log(__dirname)//diretorio
+console.log(__dirname)//diretorio do arquivo
 
-//ler de forma sincrona...
+//ler de forma sincrona... (não é recomendado para arquivos grandes)
 const conteudo = fs.readFileSync(caminho, 'utf-8')
 console.log(conteudo)
 
@@ -13,13 +13,13 @@ fs.readFile(caminho, 'utf-8', (erro, conteudo) => {
     console.log(`${config.db.host}: ${config.db.port}`)
 })
 
-//retornando um objeto (executa antes da leitura assincrona)
+//retorna um objeto (executa antes da leitura assincrona)
 const config = require('./arquivo.json')
 console.log(config.db)
 
 
 
-// //traz callback
+// //ler um diretório com resposta de callback (retorna array)
 fs.readdir(__dirname, (erro, arquivos)=> {
     console.log('Conteúdo da pasta...')
     console.log(arquivos)

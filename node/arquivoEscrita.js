@@ -6,8 +6,8 @@ const produto = {
     desconto: 0.15
 }
 
-
-//conversão do objeto para formato textual
-fs.writeFile(__dirname + '/aruivoGerado.json', JSON.stringify(produto), err => {
-    console.log(err || 'Arquivo saldo')
+//Persistir um arquivo 
+//conversão do objeto para formato textual para gerar um arquivo , ele criará um novo arquivo
+fs.writeFile(__dirname + '/arquiGerado.json', JSON.stringify(produto), err => {
+    console.log(err || 'Arquivo salvo')
 })
