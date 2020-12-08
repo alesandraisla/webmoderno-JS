@@ -14,6 +14,8 @@ times.delete('Vasco')
 console.log(times.has('Vasco'))
 
 
+//ou
+
 const nomes = ['Raquel', 'Aurora', 'Suzany', 'Aurora']
 const nomesSet = new Set(nomes)
 console.log(nomesSet)

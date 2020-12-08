@@ -40,8 +40,9 @@ for(let [chave, valor] of assuntosMap.entries()) {
     console.log(chave, valor)
 }
 
-const s = new Set (['a', 'b', 'c'])
-for(let letra of s) {
+//Fazendo com Set
+const s = new Set(['a', 'b', 'c'])
+for (let letra of s) {
     console.log(letra)
 }
 

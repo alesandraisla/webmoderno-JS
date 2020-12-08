@@ -26,7 +26,7 @@ log(null) //nulo
 log('Sou mais forte')
 
 
-//Operador rest
+//Operador rest (juntar)
 function total(...numeros) {
     let total = 0
     numeros.forEach(n => total += n)

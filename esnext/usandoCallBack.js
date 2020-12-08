@@ -17,14 +17,13 @@ const getTurma = (letra, callback) => {
     })
 }
 
+//Chamadas encadeadas callback dentro de outra 
 let nomes = []
 getTurma('A', alunos => {
  //   console.log(alunos[0].nome)
     nomes = nomes.concat(alunos.map(a => `A: ${a.nome}`))
-   
     getTurma('B', alunos => {
         nomes = nomes.concat(alunos.map(b => `B: ${b.nome}`))
-        
         getTurma('C', alunos => {
             nomes = nomes.concat(alunos.map(c => `C: ${c.nome}`))
             console.log(nomes)

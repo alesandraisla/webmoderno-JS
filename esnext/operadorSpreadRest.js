@@ -7,6 +7,7 @@ const funcionario = { nome: 'Yuna', salario: 3543.99}
 const clone = { ativo: true, ...funcionario }
 console.log(clone)
 
+
 //usar spread com array
 const grupoA = ['Tidus', 'Cloud', 'Serah']
 const grupoFinal = ['Lara', ...grupoA, 'Lulu']

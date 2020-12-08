@@ -18,26 +18,26 @@ function retornarValor() {
 }    
 
 //código assíncrono
-   async function executar() {
+async function executar() {
 
-        let valor = await retornarValor() // await ->> Em cima de uma função que retorne Promise
+    let valor = await retornarValor() // await ->> Em cima de uma função que retorne Promise (Vai extrair o valor)
 
-        await esperarPor(2000)
-        console.log(`Async/Await ${valor}...`)
+    await esperarPor(2000)
+    console.log(`Async/Await ${valor}...`)
 
-        await esperarPor(2000)
-        console.log(`Async/Await ${valor + 1}...`)
+    await esperarPor(2000)
+    console.log(`Async/Await ${valor + 1}...`)
 
-        await esperarPor(2000)
-        console.log(`Async/Await ${valor + 2}...`)
+    await esperarPor(2000)
+    console.log(`Async/Await ${valor + 2}...`)
 
-        return valor + 3;
-    }
+    return valor + 3;
+}
 
-    async function executarDeVerdade() {
-        const valor = await executar()
-        console.log(valor)
-    }
+async function executarDeVerdade() {
+    const valor = await executar()
+    console.log(valor)
+}
 
-    executar().then(console.log)
-    executarDeVerdade()
+executar().then(console.log)
+executarDeVerdade()
