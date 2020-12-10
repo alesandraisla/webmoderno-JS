@@ -18,6 +18,8 @@
             <a href="exercicios/texto1.html">01 - Texto 1 |</a>
             <a href="exercicios/texto2.html">02 - Texto 2 |</a>
             <a href="exercicios/listas.html">03 - Listas</a>
+            <a href="exercicios/listaAninhada.html">04 - Lista Aninhada</a>
+            <a href="exercicios/links.html">05 - Links </a>
         </nav>
         <section id="conteudo"></section>
         <footer>
@@ -27,15 +29,15 @@
             document.querySelectorAll('a').forEach(link => {
                 const conteudo = document.getElementById('conteudo')
 
-                link.onclick = function(e) {
-                    e.preventDefault() //chamará a ação, prevenir o comportamento padrão (parado)
-                    //console.log('ação!!!')
-                    fetch(link.href)
-                        .then(resp => resp.text()) //Pega o conteúdo da pág (retorna promise)
-                        .then(html => conteudo.innerHTML = html)
+                    link.onclick = function(e) {
+                        e.preventDefault() //prevenir o comportamento padrão (parado)
+                        //console.log('ação!!!')
+                        fetch(link.href) //retorna promise
+                            .then(resp => resp.text()) //Pega o conteúdo da pág 
+                            .then(html => conteudo.innerHTML = html)
                 }
             })
-        </script>
+        </script> 
 
     </body>
 </html>
