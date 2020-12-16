@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <title>Altura e Largura</title>
     <style>
+        html {
+            height: 100%;            
+        }
+
         body {
             font-size: 40px;
             background-color: coral;
+            height: 100%;
+            margin: 0;
         }
 
         div {
@@ -16,6 +22,15 @@
 
         span {
             background-color: dodgerblue;
+        }
+
+/* Em elementos inline a altura e largura são desconsideradas. ex: span*/
+        span, div {
+           width: 49%;
+           height: 250px;
+           height: 50%;
+           /* display: block; Funcionará no span a altura e largura */
+           display: inline-block; /*Para funcionar tem que colocar </div><span> juntos, caso não coloque fica um intervalo no meio */
         }
     </style>
 </head>

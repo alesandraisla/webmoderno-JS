@@ -5,24 +5,37 @@
     <meta charset="UTF-8">
     <title>Float</title>
     <style>
+        /* Usando clear, faz com que o elemento va para uma linha depois : left, right, both(dois lados)*/
         body {
             background-color: #222;
         }
 
         .c1 {
             background-color: red;
+            float: right;
         }
 
         .c2 {
             background-color: green;
+            clear: right;
+            float:left;
         }
         
         .c3 {
             background-color: blue;
+            clear:both;
+          
         }
 
         .c4 {
             background-color: orange;
+            float: right;
+           
+        }
+        div {
+            height: 150px;
+            width: 150px;
+          
         }
     </style>
 </head>
