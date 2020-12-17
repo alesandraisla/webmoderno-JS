@@ -9,8 +9,11 @@
     <style>
 
 
+/*##################### Meu código #############################*/
+/* 
         body {
             background-color: #D5D5D5;
+            font-family: 'Oswald', sans-serif;
         }
 
         .cabecalho {
@@ -72,6 +75,9 @@
 
         button.menu-toggle {
             display: none;
+            color: #eee;
+            background-color: #555;
+            border: solid 1px #777;
             float: left;
         }
 
@@ -113,6 +119,115 @@
             .autenticacao a {
                 display:none;
             }
+        } */
+
+
+        
+/*##################### Meu código #############################*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+
+        .cabecalho {
+            background: #333;
+            border-bottom: solid 5px #4faddb;
+            height: 80px;
+            box-sizing: content-box; /*Usar apenas conteúdo*/
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img {
+            height: 100%; /*Imagem ficará limitara em relação ao pai*/
+        }
+
+        .menu-toggle {
+            float: right;
+            color: #eee;
+            background-color: #555;
+            border: solid 1px #777;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px 20px;
+            margin: 20px 15px;
+        }
+
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .cabecalho a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+           
+        }
+        .menu a {
+            padding: 15px;
+        }
+
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu a:hover,
+        .menu a.selected {
+            background-color: #4faddb;
+            color: #000;
+        }
+
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+
+        .destaque {
+            background: #f50a31;
+            color: #fff;
+        }
+
+        @media(min-width: 679px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        @media(max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media(max-width: 910px) {
+            .autenticacao {
+                display: none;
+            }
         }
 
     </style>
@@ -153,7 +268,15 @@
     <script>
         // evento mudança do rest - pegar url antiga e url atual e fazer o esquema 
         //evento detecta a mudança do rest e consegue fazer o trabalho de manter selecionado.
-
+        window.onhashchange = function(evento) {
+            const oldURL = evento.oldURL.split('#')[1]
+            const newURL = evento.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[hred='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
     </script>
 </body>
 
