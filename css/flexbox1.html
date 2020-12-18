@@ -6,7 +6,52 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .flex-container {
+            display:flex; /*Por padrão ficará tudo na mesma linha*/
+            flex-direction: column; /*Colunas*/
+            flex-direction: column-reverse; /*reverte a ordem dos elementos*/
+            flex-direction: row-reverse; /*reverte a ordem e o eixo da linha*/
+            flex-direction: row; /*linha*/
+            width: 50%;
+            height: 200px;
+            flex-wrap: wrap; /*Quebra de linha, respeita as dimensões do width/height*/
+            flex-wrap: wrap-reverse;
+            flex-flow: row wrap; 
+            flex-flow: column-reverse wrap; /*Se não coloca wrap vai acontecer overflow <nowrap>*/
+            flex-flow: column wrap;
+
+            justify-content: flex-start; /*justificar o conteúdo*/    
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around; /*Mesmo espaço entre os elementos e laterais*/
+            flex-direction: row-reverse;
+            justify-content:space-between; /*Apenas espaço entre os elementos sem ser na ponta */
+
+            /* Cross Axis*/
+            height: 400px;
+            align-items: stretch; /*Padrão*/
+            align-items: baseline; /*alinhar pela linha da base das fontes*/
+            align-items: flex-start; /*alinhar pelo início*/
+            align-items: flex-end; /*alinhar pelo final*/
+            align-items: center; /*alinhar no centro*/ 
+
+            /*mais de uma linha */
+            align-content: flex-start; /*Linhas início*/
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;  
+        }
     </style>
 </head>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -16,7 +16,8 @@
             background: #333;
             color: #fff;
             border-bottom: solid 5px #4faddb;
-            height: 80px;
+            padding: 10px 0;
+            /* height: 80px; */
         }
         
         .logo img {
@@ -51,14 +52,35 @@
             background: #f50a31;
             color: #fff;
         }
-        /* ==================== */
-        /* Solução com Flex Box */
-        /* ==================== */
+        
+        /*######### MEU CÓDIGO ###############*/
+
+        header.flex-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+       
+        .autenticacao a {
+            display: inline-block;
+        }
+
+        /*######### MEU CÓDIGO ###############*/
+      
     </style>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho flex-container">
         <div class="logo">
             <a href="#inicio">
                 <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
@@ -67,10 +89,10 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#inicio">Início</a>
+                    <a href="#inicio" >Início</a>
                 </li>
                 <li>
-                    <a href="#cursos">Cursos</a>
+                    <a href="#cursos" >Cursos</a>
                 </li>
                 <li>
                     <a href="#sobre">Sobre</a>
@@ -80,10 +102,10 @@
                 </li>
             </ul>
         </nav>
-        <aside class="autenticacao">
+        <div class="autenticacao">
             <a href="#login">Login</a>
             <a href="#registar" class="botao destaque">Registrar</a>
-        </aside>
+        </div>
     </header>
 </body>
 

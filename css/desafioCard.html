@@ -5,38 +5,44 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        .curso {
+
+        /*##################### MEU CÓDIGO ###################################*/
+        /* .curso {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
             transition: 0.3s;
             width: 25%;
             margin-left:2.5%;
-            padding: 10px 5px 1.5px 10px;
             margin-bottom: 2.5%;
-            height: 18.5%;
+            height: 350px;
             float: left;
             padding-bottom: 25px
+            fonte-family: Verdana, sans-serif;
         }
 
         .curso img {
-            height:100%;
             width: 100%;
         }
 
         .curso-info h4 {
             font-size: 25px;
+            margin-top: 2px;
+            padding-left: 10px;
+            margin-bottom: 2px;
         }
 
         
         .curso-info p {
             font-size: 19px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+            padding-left: 10px;
         }
         
         .curso-preco > .preco-de {
             text-decoration: line-through;
             color: brown;
             padding-left: 70px;
-            font-size: 15px;
+            font-size: 18px;
            
         }
 
@@ -46,8 +52,56 @@
             font-weight: bolder;
             float: right;
             font-size: 30px;
+            padding: 10px;
+        } */
+
+           /*##################### MEU CÓDIGO ###################################*/
+
+           
+        .curso {
+            float: left;
+            vertical-align: top; /*Se não tiver imagem o card ficará alinhado*/
+            font-family: Verdana, sans-serif;
+            border: solid 1px #CCC;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+            height: 300px;
+            width: 260px;
+            margin: 5px 20px;
+            padding: 5px;
         }
 
+        .curso img {
+            width: 100%;
+            max-height: 50%;
+        }
+
+        .curso-info {
+            padding: 10px;
+            height: 90px;
+            overflow: hidden; /*Esconder o nome que ficou por cima do valor*/
+        }
+
+        .curso-info h4 {
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0px;
+        }
+
+        .curso-preco {
+            float: right;
+            padding: 10px;
+        }
+        
+        .preco-de {
+            text-decoration: line-through;
+            color: firebrick;
+        }
+
+        .preco-por {
+            color: green;
+            font-weight: bold;
+            font-size: 1.4em;
+        } */
     </style>
 </head>
 
@@ -63,7 +117,7 @@
             <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
             <div class="curso-info">
                 <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
-                <!-- <p>Prof. Fulano</p> -->
+                <p>Prof. Fulano</p>
             </div>
             <div class="curso-preco">
                 <span class="preco-de">R$80,00</span>
