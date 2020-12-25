@@ -22,6 +22,58 @@
             border: solid 5px dodgerblue;
             background: #fff;
         }
+
+        body {
+            display: grid;
+            /* Organização da ocupação das colunas */
+            grid-template-columns: 50% 50%;
+            /* Valores igual define a qt que vai repetir (ocupa 100% do espaço*/
+            grid-template-columns: repeat(4, 8.33% 8.33% 8.33%);
+            /* Sem ocupar 100% do espaço */
+            grid-template-columns: repeat(4, 8.33%);
+            /* Ocupando 100% do espaço */
+            grid-template-columns: repeat(12, 8.33%);
+            /* agrupando */
+            grid-template-columns: repeat(11, 100px) 100px;
+            /* Definindo intervalo de uma coluna
+                minmax(100px, 300px)
+             */
+             /* fragmento - pegar resto do que sobrou */
+             grid-template-columns: 200px 20% 1fr;
+             grid-template-columns: 3fr 6fr 3fr;
+             /* Tamanho das linhas */
+             grid-template-rows: 50% 25% 12.5% 12.5%;
+             grid-template-rows: 100px 1fr; /*Se não informar as demais colunas o browsier pegará o minimo possivel */
+            /* Auto deixará de forma automática */
+            grid-template-rows: 100px auto;
+            }
+
+            .d8 {
+                /* Alterar o tamanho de uma coluna particular*/
+                grid-column-start: 2; /*Começar na linha 2*/
+                grid-column-end: 4;   /*Ir para até linha 4*/
+                grid-column-end: span 2; /*Comece a partir da linha 2 e dê um span na linha do lado*/
+                grid-row-start: 3;
+                grid-row-end: 5;
+                grid-row-end: span 2; /*Mesma lógica do de cima*/
+            }
+
+            .d10, 
+            .d11 {
+                /* podem se sobrepor */
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5; /*sobrepos*/
+                grid-row-end: span 1; /*Mesma coisa do de cima*/
+            }
+
+            .d10 {
+                /* Profundidade dos elementos, como vai organizar na página */
+                z-index: 10;
+            }
+
+
+        
     </style>
 </head>
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>              
+        // Adiciona uma class na ID
+
+        // document.getElementById('primeiro').classList.add('destaque')
+
+        
+        // Duas formas de transformar um html collection em um array 
+        //Percorrer cada um dos elementos de uma lista  (Remover class)
+
+        // const divs = document.getElementsByTagName('div')
+        // Array.from(divs).forEach(e => e.classList.remove('destaque'))
+
+        //    const novo = document.getElementsByTagName('div')
+        // Array.from(divs).forEach(e => e.classList.add('destaque'))
+
+        // Outra forma de fazer (Adicionar class)
+        // const divsArray = [...divs]
+        // divsArray.forEach(e => e.classList.add('destaque'))
+
+        // retorna html collection que não é um array
+        // const ultimosElementos = document.getElementsByClassName('ultimo')
+        // for(let e of ultimosElementos) {
+        //     e.classList.remove('destaque')
+        // }
+
+        const grupo = document.getElementsByTagName('div')
+        Array.from(grupo).forEach(elemento => elemento.classList.remove('destaque'))
+        
+        const novo = document.getElementsByTagName('div')
+        Array.from(novo).forEach(elemento => elemento.classList.add('destaque'))
+
+    </script>
+</body>
+</html>
