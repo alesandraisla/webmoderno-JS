@@ -13,7 +13,7 @@
     </div>
     <div>
         <ul>
-            <li>Pedro</li>
+            <li>Suzy</li>
             <li>Ana</li>
             <li>Bia</li>
         </ul>
@@ -22,7 +22,41 @@
         <p>Fim</p>
     </div>
     <script>
-        // ...
+        function log() {
+            console.log(this)
+        }
+
+        HTMLCollection.prototype.log = log
+        HTMLElement.prototype.log = log
+        NodeList.prototype.log = log
+        Node.prototype.log = log
+
+        const lista = document.querySelector('div ul')
+        lista.parentNode.log() //Pai
+        lista.childNodes.log()  //filhos (texto + elemento)
+
+        //Próximo irmão
+        const primeiro = lista.firstChild
+        primeiro.log()
+        primeiro.nextSibling.log()
+
+        //Ultimo filho
+        const ultimo = lista.lastChild
+        ultimo.log()
+        ultimo.previousSibling.log()
+
+        //Primeiro filho
+        lista.children.log()
+        lista.firstElementChild.log()
+        lista.lastElementChild.log()  //ultimo
+        //Elemento anterior 
+        lista.parentNode.previousElementSibling.log()
+        //Próximo elemento
+        lista.parentNode.nextElementSibling.log()
+
+        //Ou
+        document.querySelectorAll('div ul li').log()
+
     </script>
 </body>
 
