@@ -17,6 +17,19 @@
     <script>
         // ...
 
+        // const imagem = document.querySelector('img')
+        // console.log(imagem.getAttribute('src'))
+        // console.log(imagem.src)
+        // console.log(imagem['src'])
+
+        // const link = document.querySelector('a')
+        // console.log(link.getAttribute('href'))
+        // console.log(link.href)
+        // console.log(link['href'])
+
+
+
+
         // Acessando atributo do tag
         const img = document.querySelector('img')
         console.log('getAttribute', img.getAttribute('src')) //1 forma com string
@@ -40,9 +53,10 @@
         console.log('href', link.href)
         console.log('firstChild.nodeType', link.firstChild.nodeType)
         link.firstChild.nodeValue = 'Novo texto'  //alterou o valor do link
-        link.innerHTML = 'Texto 2'
+        link.innerHTML = 'Texto 2' // Segunda forma de alterar o valor do link
 
 
+        
 
         
 
