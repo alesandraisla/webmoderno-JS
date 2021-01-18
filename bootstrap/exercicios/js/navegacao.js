@@ -12,6 +12,8 @@
             .then(resp => resp.text())
             .then(html => {
                 destino.innerHTML = html
+                // Processar tolltip
+                eval(html.match(/\<script\>([\s\S]*)\<\/script\>/))
             })
     }
 
