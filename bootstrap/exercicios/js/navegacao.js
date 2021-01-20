@@ -13,7 +13,10 @@
             .then(html => {
                 destino.innerHTML = html
                 // Processar tolltip
-                eval(html.match(/\<script\>([\s\S]*)\<\/script\>/))
+                const resultado = html.match(/\<script\>([\s\S]*)\<\/script\>/)
+                if(resultado && resultado.length >= 2) {
+                    eval(resultado[1])
+                }
             })
     }
 
