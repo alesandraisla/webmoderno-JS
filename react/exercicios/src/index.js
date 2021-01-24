@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 // import BomDia from './componentes/BomDia'
 
+// Componentes individuais
 // import { BoaTarde, BoaNoite} from './componentes/Multiplos'
 
 // ReactDOM.render(
@@ -12,14 +13,28 @@ import ReactDOM from 'react-dom'
 //     </div>
 // , document.getElementById('root'))
 
-import Multi from './componentes/Multiplos'
+// Componentes em conjunto
+// import Multi from './componentes/Multiplos'
+
+// ReactDOM.render(
+//     <div>
+//         <Multi.BoaTarde nome="Ana" />
+//         <Multi.BoaNoite nome="Bia" />
+//     </div>
+// , document.getElementById('root'))
+
+import Saudacao from './componentes/Saudacao'
 
 ReactDOM.render(
     <div>
-        <Multi.BoaTarde nome="Ana" />
-        <Multi.BoaNoite nome="Bia" />
+        <Saudacao tipo="Bom dia" nome="Suzy" />
     </div>
 , document.getElementById('root'))
+
+
+
+
+
 // Pode colocar qualquer nome no import "primeiro". A primeira letra tem que ser maiuscula
 // import Primeiro from './componentes/Primeiro'
 
