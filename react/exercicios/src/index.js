@@ -23,11 +23,27 @@ import ReactDOM from 'react-dom'
 //     </div>
 // , document.getElementById('root'))
 
-import Saudacao from './componentes/Saudacao'
+
+
+// import Saudacao from './componentes/Saudacao'
+
+// ReactDOM.render(
+//     <div>
+//         <Saudacao tipo="Bom dia" nome="Suzy" />
+//     </div>
+// , document.getElementById('root'))
+
+import Pai from './componentes/Pai'
+import Filho from './componentes/Filho'
 
 ReactDOM.render(
     <div>
-        <Saudacao tipo="Bom dia" nome="Suzy" />
+        <Pai tipo="Paulo" sobrenome="Croft">
+            {/* Como passo os componentes filhos aqui? */}
+            <Filho nome="Lara" sobrenome="Croft" />
+            <Filho nome="Yuna" sobrenome="Croft" />
+            <Filho nome="Bryan" sobrenome="Croft" />
+        </Pai>
     </div>
 , document.getElementById('root'))
 
