@@ -1,0 +1,15 @@
+{
+    "products": [{
+        "id": 1,
+        "name": "Notebook Samsung",
+        "price": 2580.99
+    },{
+        "id": 2,
+        "name": "Agenda Tilibra Llama",
+        "price": 29.99
+    }, {
+        "id": 3,
+        "name": "Celular Sony Xperia",
+        "price": 1999.99
+    }]
+}
