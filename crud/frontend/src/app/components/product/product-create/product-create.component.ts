@@ -1,3 +1,4 @@
+import { Product } from './../product.model';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 // Navegar para outra tela
@@ -13,6 +14,11 @@ import { Router } from '@angular/router';
 
 export class ProductCreateComponent implements OnInit {
 
+  product: Product = {
+    name: '',
+    price: null
+  }
+
   // atributoLegal = "sejadiferente"    
   constructor(private ProductService: ProductService,
       private router: Router) { }
@@ -22,11 +28,13 @@ export class ProductCreateComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-   
   }
 
   createProduct(): void {
-    this.ProductService.showMessage('Produto criado')
+    this.ProductService.create(this.product).subscribe(() => {
+      this.ProductService.showMessage('Produto criado')
+      this.router.navigate(['/products'])
+    })
   }
 
   cancel(): void {
