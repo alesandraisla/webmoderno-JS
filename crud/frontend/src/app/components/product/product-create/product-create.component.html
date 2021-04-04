@@ -1,5 +1,13 @@
 <!-- Só funciona quando coloca o colchete - BINDING DE ATRIBUTO  -->
-<p [id]="atributoLegal">product-create works!</p>
+<p>product-create works!</p>
+<!-- [id]="atributoLegal" -->
 
+<button mat-raised-button (click)="createProduct()" color="primary">
+    Salvar
+</button>
+
+<button mat-raised-button (click)="cancel()" color="inherit">
+    Cancelar
+</button>
 <!-- Só fará a ligação quando coloca o click entre parêntese - BINDING DE EVENTO-->
 <!-- <button (click)="fazerAlgo()">Fazer Algo</button> -->
