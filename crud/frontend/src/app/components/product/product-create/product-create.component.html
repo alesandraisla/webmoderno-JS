@@ -1,13 +1,26 @@
 <!-- Só funciona quando coloca o colchete - BINDING DE ATRIBUTO  -->
-<p>product-create works!</p>
+<!-- <p>product-create works!</p> -->
 <!-- [id]="atributoLegal" -->
 
-<button mat-raised-button (click)="createProduct()" color="primary">
-    Salvar
-</button>
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" color="inherit">
+        Cancelar
+    </button>
+</mat-card>
 
-<button mat-raised-button (click)="cancel()" color="inherit">
-    Cancelar
-</button>
+
 <!-- Só fará a ligação quando coloca o click entre parêntese - BINDING DE EVENTO-->
 <!-- <button (click)="fazerAlgo()">Fazer Algo</button> -->
