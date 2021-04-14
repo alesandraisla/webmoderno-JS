@@ -39,15 +39,21 @@ export class ProductService {
     return this.http.get<Product[]>(this.baseUrl)
   }
 
-  // Leitura
+  // Leitura requisição do tipo get
   readById(id: string): Observable<Product> {
     const url=`${this.baseUrl}/${id}`
     return this.http.get<Product>(url)
   }
 
-  // Atualização
+  // Atualização requisição do tipo put
   update(product: Product): Observable<Product> {
     const url =`${this.baseUrl}/${product.id}`
     return this.http.put<Product>(url, product)
+  }
+
+    // Exclusão requisição do tipo delete
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Product>(url);
   }
 }
