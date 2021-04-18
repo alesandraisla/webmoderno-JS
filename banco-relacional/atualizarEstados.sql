@@ -3,6 +3,14 @@ set nome = 'Maranhão'
 where sigla = 'MA';
 
 select 
-    nome
+    `nome`
 from estados
 where sigla = 'Ma';    
+
+update estados
+set nome = 'Paraná', 
+    populacao = 11.32
+where sigla = 'PR';
+
+select * from estados est
+where sigla = 'PR';

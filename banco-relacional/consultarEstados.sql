@@ -17,7 +17,7 @@ where regiao = 'Sul';
 select 
     nome, 
     regiao,
-    popualacao from estados
+    populacao from estados
 where populacao >= 10
 order by populacao desc;
 
