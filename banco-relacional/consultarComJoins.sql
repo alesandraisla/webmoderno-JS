@@ -10,7 +10,7 @@ select * from cidades c left outer join prefeitos p on c.id = p.cidade_id;
 select * from cidades c right join prefeitos p on c.id = p.cidade_id;
 select * from cidades c right outer join prefeitos p on c.id = p.cidade_id;
 
--- Mostrará tudo 
+-- Mostrará tudo equivalente a full join
 select * from cidades c left outer join prefeitos p on c.id = p.cidade_id
 union
 select * from cidades c right outer join prefeitos p on c.id = p.cidade_id;
